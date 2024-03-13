@@ -12,7 +12,7 @@ bgImageDark: http://pic.yupoo.com/pokerface0930/e7ab0c19/52f92e64.jpeg
 
 projects:
   - icon: music
-    name: 塞人唱片
+    name: 塞壬唱片
     desc: 休闲一下，听个音乐
     link: https://monster-siren.hypergryph.com/music
 
