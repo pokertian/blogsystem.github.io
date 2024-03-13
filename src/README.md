@@ -2,16 +2,19 @@
 home: true
 layout: BlogHome
 icon: home
-title: 博客主页
-heroImage: logo_dlut.png
-heroText: 你博客的名称
+title: 主页
+
+heroText: 大连理工大学-校内实训项目
 heroFullScreen: true
-tagline: 你可以在这里放置你的口号与标语
+tagline: 基于vuepress的博客系统
+bgImage: http://pic.yupoo.com/pokerface0930/3241ec68/8cb1ecac.jpg
+bgImageDark: http://pic.yupoo.com/pokerface0930/e7ab0c19/52f92e64.jpeg
+
 projects:
-  - icon: project
-    name: 项目名称
-    desc: 项目详细描述
-    link: https://你的项目链接
+  - icon: music
+    name: 塞人唱片
+    desc: 休闲一下，听个音乐
+    link: https://monster-siren.hypergryph.com/music
 
   - icon: link
     name: 链接名称
@@ -40,9 +43,5 @@ projects:
 
 footer: 自定义你的页脚文字
 ---
-
-这是一个博客主页的案例。
-
-要使用此布局，你应该在页面前端设置 `layout: BlogHome` 和 `home: true`。
-
-相关配置文档请见 [博客主页](https://theme-hope.vuejs.press/zh/guide/blog/home/)。
+此博客系统使用Mister hope所做博客主题
+详见 [博客主页](https://theme-hope.vuejs.press/zh/guide/blog/home/)。

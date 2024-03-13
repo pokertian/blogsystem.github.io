@@ -1,27 +1,26 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
-import { MR_HOPE_AVATAR } from "./logo.js";
+
 
 export default hopeTheme({
-  hostname: "https://mister-hope.github.io",
+  hostname: "https://gitee.com/yunhao-tian/blogsystem",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "高威天龙",
+    url: "https://gitee.com/yunhao-tian/blogsystem",
   },
-
+  favicon: "http://pic.yupoo.com/pokerface0930/51b1e167/d9dabe3e.png",
   iconAssets: "fontawesome-with-brands",
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
-
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  logo: "http://pic.yupoo.com/pokerface0930/51b1e167/d9dabe3e.png",
 
   docsDir: "src",
 
+  repo: "https://gitee.com/yunhao-tian/blogsystem",
   // 导航栏
   navbar,
-
+  breadcrumbIcon: true,
   // 侧边栏
   sidebar,
 
@@ -31,54 +30,16 @@ export default hopeTheme({
 
   // 博客相关
   blog: {
-    description: "一个前端开发者",
+    description: "高用鑫、张秦维、田赟皓、崔海龙",
     intro: "/intro.html",
     medias: {
-      Baidu: "https://example.com",
-      BiliBili: "https://example.com",
-      Bitbucket: "https://example.com",
-      Dingding: "https://example.com",
-      Discord: "https://example.com",
-      Dribbble: "https://example.com",
-      Email: "mailto:info@example.com",
-      Evernote: "https://example.com",
-      Facebook: "https://example.com",
-      Flipboard: "https://example.com",
-      Gitee: "https://example.com",
-      GitHub: "https://example.com",
-      Gitlab: "https://example.com",
-      Gmail: "mailto:info@example.com",
-      Instagram: "https://example.com",
-      Lark: "https://example.com",
-      Lines: "https://example.com",
-      Linkedin: "https://example.com",
-      Pinterest: "https://example.com",
-      Pocket: "https://example.com",
-      QQ: "https://example.com",
-      Qzone: "https://example.com",
-      Reddit: "https://example.com",
-      Rss: "https://example.com",
-      Steam: "https://example.com",
-      Twitter: "https://example.com",
-      Wechat: "https://example.com",
-      Weibo: "https://example.com",
-      Whatsapp: "https://example.com",
-      Youtube: "https://example.com",
-      Zhihu: "https://example.com",
-      MrHope: ["https://mister-hope.com", MR_HOPE_AVATAR],
+      BiliBili: "https://example.com",     
+      Dingding: "https://example.com",          
+      Gitee: "https://gitee.com/yunhao-tian",
+      QQ: "https://example.com",    
+      Steam: "https://example.com",           
+      Github: "https://example.com",
     },
-  },
-
-  // 加密配置
-  encrypt: {
-    config: {
-      "/demo/encrypt.html": ["1234"],
-    },
-  },
-
-  // 多语言配置
-  metaLocales: {
-    editLink: "在 GitHub 上编辑此页",
   },
 
   // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
@@ -87,16 +48,18 @@ export default hopeTheme({
   // 在这里配置主题提供的插件
   plugins: {
     blog: true,
-
-    // 在启用之前需要安装 @waline/client
-    // 警告: 这是一个仅供演示的测试服务器，在生产环境中请自行部署并使用自己的服务器！
-    // comment: {
-    //   provider: "Waline",
-    //   serverURL: "https://waline-comment.vuejs.press",
-    // },
-
+    //评论插件
+    comment: {
+      provider: "Waline",
+      serverURL: "www.blogdlut.fun",
+    },
+    //搜索插件
+    searchPro:{
+      autoSuggestions: true,
+    },
+    //其他插件
     components: {
-      components: ["Badge", "VPCard"],
+      components: ["Badge", "BiliBili","VPCard","Share"],
     },
 
     // 此处开启了很多功能用于演示，你应仅保留用到的功能。

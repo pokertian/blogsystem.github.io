@@ -4,19 +4,19 @@ export default sidebar({
   "/": [
     "",
     {
-      text: "如何使用",
-      icon: "laptop-code",
+      text: "参考模板",
+      icon: "file",
       prefix: "demo/",
       link: "demo/",
       children: "structure",
     },
     {
-      text: "文章",
-      icon: "book",
+      text: "博文",
+      icon: "blog",
       prefix: "posts/",
       children: "structure",
     },
-    "intro",
+     "upload/",
     {
       text: "幻灯片",
       icon: "person-chalkboard",
